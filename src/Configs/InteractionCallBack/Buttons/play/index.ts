@@ -3,9 +3,9 @@ import { ModalCreater } from "../../../../Utilities/ModalCreater";
 
 function play(interaction: ButtonInteraction) {
     const ModalCreate = new ModalCreater(
-        new ModalBuilder().setTitle("Links?").setCustomId("play_link"),
+        new ModalBuilder().setTitle("Music Players").setCustomId("play_song"),
         [
-            new TextInputBuilder().setCustomId("yt_input_links").setLabel("Youtube Links").setPlaceholder("Please Enter Youtube Links.").setStyle(TextInputStyle.Short)
+            new TextInputBuilder().setCustomId("song_input").setLabel("Song Name or Links").setPlaceholder("Please Enter name or links.").setStyle(TextInputStyle.Short)
         ]
     )
     ModalCreate.showModal(interaction)

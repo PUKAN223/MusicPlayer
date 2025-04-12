@@ -1,15 +1,14 @@
 import type Modal from "../Interfaces/Modals";
-import play_link from "./InteractionCallBack/Modals/play_link";
-import search_name from "./InteractionCallBack/Modals/search_name";
-
+import play_song from "./InteractionCallBack/Modals/playSong";
+import volume from "./InteractionCallBack/Modals/volume";
 const ModalRegister: Array<Modal> = [
     {
-        id: "play_link",
-        exec: (interaction) => play_link.callback(interaction)
+        id: "play_song",
+        exec: (interaction) => play_song.callback(interaction)
     },
     {
-        id: "search_name",
-        exec: (interaction) => search_name.callback(interaction)
+        id: "volume",
+        exec: (interaction) => volume.callback(interaction)
     }
 ]
 
